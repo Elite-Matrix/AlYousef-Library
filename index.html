@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="description" content="مكتبة اليوسف - قرطاسية وكتب">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'">
+    <title>مكتبة اليوسف</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script src="theme-init.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <noscript><p class="empty-results">يرجى تفعيل JavaScript لعرض المنتجات وإرسال الطلب.</p></noscript>
+    <header class="hero-section">
+        <div class="page-shell hero-inner">
+            <div class="hero-heading">
+                <h1>مكتبة اليوسف</h1>
+                <button id="themeToggle" class="theme-button" type="button" aria-label="تفعيل الوضع الليلي" aria-pressed="false"></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-shell main-content">
+        <section class="filter-panel">
+            <label class="sr-only" for="menuSearch">ابحث في المنتجات</label>
+            <input id="menuSearch" class="form-input" type="search" maxlength="60" placeholder="ابحث عن دفتر، قلم..." autocomplete="off">
+            <div id="categoryFilters" class="category-bar"></div>
+            <label class="sr-only" for="categorySelect">اختر فئة المنتجات</label>
+            <select id="categorySelect" class="category-select"></select>
+        </section>
+        <div id="statusMessage" class="status-message hidden" role="status"></div>
+        <h2 class="section-title">المنتجات</h2>
+        <div id="menuGrid" class="menu-grid"></div>
+        <p id="noResults" class="empty-results hidden">لا توجد نتائج مطابقة</p>
+    </main>
+
+    <button id="cartButton" class="cart-button" type="button" aria-controls="cartModal" aria-expanded="false">المشتريات <span id="cartCount" class="cart-count" aria-live="polite">0</span></button>
+
+    <div id="cartModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+        <section class="cart-panel">
+            <div class="panel-header"><h2 id="cartTitle">المشتريات</h2><button id="closeCartButton" class="icon-button" type="button" aria-label="إغلاق">×</button></div>
+            <div class="cart-scroll">
+                <div id="cartItems" class="cart-items"></div>
+                <p id="emptyCart" class="empty-cart">لا توجد مشتريات حالياً</p>
+            </div>
+            <div class="cart-form-wrap">
+                <div class="total-row"><span>المجموع</span><strong id="cartTotal">0 ل.س</strong></div>
+                <form id="orderForm" novalidate>
+                    <div><label class="form-label" for="customerName">اسم المستلم</label><input id="customerName" class="form-input" type="text" maxlength="30" required autocomplete="name"></div>
+                    <button class="primary-button" type="submit">إرسال الطلب عبر واتساب</button>
+                    <p id="formMessage" class="form-message hidden" role="alert"></p>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

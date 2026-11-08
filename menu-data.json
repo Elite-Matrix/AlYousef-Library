@@ -1,0 +1,22 @@
+{
+    "categories": [
+        {"id": "books-notebooks", "name": "الدفاتر والكتب"},
+        {"id": "writing-tools", "name": "الأقلام وأدوات الكتابة"},
+        {"id": "office-supplies", "name": "القرطاسية المكتبية"},
+        {"id": "art-school", "name": "مستلزمات دراسية وفنية"}
+    ],
+    "items": [
+        {"id":"notebook-100","name":"دفتر 100 ورقة","description":"دفتر مسطر بغلاف مقوى مناسب للمحاضرات","price":120,"category":"books-notebooks","available":true},
+        {"id":"notebook-spiral","name":"دفتر سلك A4","description":"دفتر سلك 200 ورقة مع فواصل داخلية","price":250,"category":"books-notebooks","available":true},
+        {"id":"notepad","name":"مفكرة جيب","description":"مفكرة صغيرة لتدوين الملاحظات السريعة","price":80,"category":"books-notebooks","available":true},
+        {"id":"pen-blue","name":"قلم حبر أزرق","description":"قلم حبر ناعم الكتابة وسريع الجفاف","price":30,"category":"writing-tools","available":true},
+        {"id":"pen-gel","name":"قلم جل","description":"قلم جل بسماكة 0.5 مم بألوان متعددة","price":50,"category":"writing-tools","available":true},
+        {"id":"pencil-set","name":"أقلام رصاص","description":"علبة أقلام رصاص HB عدد 12","price":150,"category":"writing-tools","available":true},
+        {"id":"highlighter","name":"قلم تحديد","description":"قلم تحديد فسفوري لتمييز النصوص","price":60,"category":"writing-tools","available":true},
+        {"id":"stapler","name":"دباسة مع دبابيس","description":"دباسة مكتبية متوسطة مع علبة دبابيس","price":220,"category":"office-supplies","available":true},
+        {"id":"paper-a4","name":"رزمة ورق A4","description":"رزمة 100 ورقة أبيض للطباعة والتصوير","price":300,"category":"office-supplies","available":true},
+        {"id":"folder","name":"ملف شفاف","description":"ملف بلاستيكي شفاف لحفظ الأوراق","price":40,"category":"office-supplies","available":true},
+        {"id":"ruler-set","name":"طقم أدوات هندسية","description":"مسطرة ومنقلة ومثلثان داخل علبة","price":140,"category":"art-school","available":true},
+        {"id":"colors","name":"ألوان خشبية","description":"علبة ألوان خشبية عدد 24 لوناً","price":180,"category":"art-school","available":true}
+    ]
+}
